@@ -1,0 +1,118 @@
+.navbar {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.navbar .navlinks {
+  list-style-type: none;
+}
+.navbar .navlinks .navlink {
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .navbar .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .navbar .dropdown .dropdown-button {
+    background-color: #94c70a;
+    color: #f4f4f4;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+  }
+  .navbar .dropdown .dropdown-button .bi .bi-list {
+    width: 60px;
+    height: 10000px;
+    color: #d8ffcb;
+  }
+  .navbar .dropdown .dropdown-button:active {
+    background-color: #94c70a;
+    color: #d8ffcb;
+    border-radius: 5px;
+  }
+  .navbar .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 100;
+    background-color: #94c70a;
+    color: #f4f4f4;
+  }
+  .navbar .dropdown .dropdown-content a {
+    color: #f4f4f4;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+  }
+  .navbar:hover .dropdown-content {
+    display: block;
+    background-color: #94c70a;
+    top: 100%;
+    right: 0;
+    transition: max-height 0.2s ease-out;
+    border: solid;
+    border-color: #f4f4f4;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    align-items: flex-start;
+  }
+  .dropdown {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .dropdown-button {
+    display: none;
+  }
+  .navlinks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .navlinks .navlink {
+    color: #94c70a;
+    padding: 10px 20px;
+  }
+  .navlinks .navlink:hover {
+    background-color: #f4f4f4;
+    color: #94c70a;
+    border-radius: 5%;
+  }
+}
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+}
+html body {
+  background-color: #d8ffcb;
+  color: #f4f4f4;
+  font: 20px Roboto, sans-serif;
+}
+html body .header-website {
+  font: 19px/25px Roboto, sans-serif;
+  margin-bottom: 5vw;
+}
+
+@media screen and (max-width: 768px) {
+  .header-website {
+    justify-content: space-between;
+  }
+  .header-website a {
+    color: #f4f4f4;
+    text-decoration: none;
+  }
+  .header-website .logo {
+    width: 5rem;
+    border-radius: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 7rem;
+    border-radius: 50%;
+  }
+}/*# sourceMappingURL=main.css.map */

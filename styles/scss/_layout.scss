@@ -1,0 +1,43 @@
+//layout commun
+html {
+  scroll-behavior: smooth;
+  width: 100%; //pas touche
+  padding: 10px 10px 10px 10px;
+  body {
+    background-color: $primary;
+    color: $white;
+    font: 20px Roboto, sans-serif;
+
+    .header-website {
+      font: 19px / 25px Roboto, sans-serif;
+      margin-bottom: 5vw;
+    }
+  }
+}
+
+//ajouter layout footer
+
+///layout mobile
+
+@media screen and (max-width: 768px) {
+  .header-website {
+    justify-content: space-between;
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+    .logo {
+      width: 5rem;
+      border-radius: 50%;
+    }
+  }
+}
+
+///layout pc
+
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 7rem;
+    border-radius: 50%;
+  }
+}
