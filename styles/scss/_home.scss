@@ -1,0 +1,23 @@
+@import "_variables.scss";
+
+.card-title {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+h5.card-title {
+  margin: 0;
+}
+
+.card-title,
+.card-body {
+  background-color: $primary;
+
+  .card-img-home {
+    height: 50%;
+    width: 60%;
+  }
+}
